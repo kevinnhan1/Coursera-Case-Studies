@@ -36,3 +36,10 @@ achieve them.
 recommended marketing program.
 
 # Prepare
+For this case study the 12 most recent months (as of Oct 2022) of Cyclistic's data was collected. The data was has been made available by Motivate International Inc and can be found [here](https://divvy-tripdata.s3.amazonaws.com/index.html) and under this [license](https://ride.divvybikes.com/data-license-agreement). 
+
+The data files have been downloaded and stored locally and on Google Drive.
+
+All 12 spreadsheets are formatted to be CSV files (comma seperated values) and have a total of 13 identical columns. Column names are the following: ride_id, ridable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, member_casual.
+
+
