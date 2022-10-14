@@ -36,7 +36,7 @@ achieve them.
 recommended marketing program.
 
 # Prepare
-For this case study the 12 most recent months (as of Oct 2022) of Cyclistic's data was collected. The data was has been made available by Motivate International Inc and can be found [here](https://divvy-tripdata.s3.amazonaws.com/index.html) and under this [license](https://ride.divvybikes.com/data-license-agreement). 
+For this case study the 12 most recent months (as of Oct 2022) of Cyclistic's data was collected. The data was has been made available by Motivate International Inc and can be found [here](https://divvy-tripdata.s3.amazonaws.com/index.html), under this [license](https://ride.divvybikes.com/data-license-agreement). 
 
 The data files have been downloaded and stored locally and on Google Drive.
 
