@@ -107,7 +107,7 @@ Lastly, the file was exported (in order to use in tableau)
 write.csv(Combined_trips, "Filtered_Cyclistic_Data.csv")
 ```
 
-After cleaning and transforming the data, we were left with **9 columns** and **4474141 rows** of data. Prior before, there were **13 columns** and **5828235 rows** of data. Upon data cleaning and transformation a bit over **23%** of the data contained missing values ('N/A' values). Imputation, wasn't considered due to the nature of the data. Thus, we went with moving forward with the data as it was still a large sample of the entire populatio nof the data.
+After cleaning and transforming the data, we were left with **9 columns** and **4474141 rows** of data. Prior before, there were **13 columns** and **5828235 rows** of data. Upon data cleaning and transformation, a bit over **23%** of the data contained missing values ('N/A' values). Imputation, wasn't considered due to the nature of the data. Thus, we went with moving forward with the data as it was still a large sample of the entire populatio nof the data.
 
 # Analyze: 
 To start off, I did my calculations around **both** casual and annual members. I examined how popular bikes were being rented during the days of the week and during the months of a year.
