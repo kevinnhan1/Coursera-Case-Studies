@@ -50,7 +50,7 @@ All 12 spreadsheets are formatted to be CSV files (comma seperated values) and h
 RStudios was used for the data cleaning process of this case study. This is because, R is very strong and powerful when it comes to using a large amount of data.
 
 ## Cleaning and transforming the data:
-The data was imported from it's local directory. Any blank values were converted to 'N/A'.
+To begin, the data was imported from it's local directory. Additionally, any blank values were converted to 'N/A'.
 
 ```ruby
 #importing csv files and changing all blanks to NA values
@@ -67,3 +67,28 @@ Jul_22 <- read.csv("202207-divvy-tripdata.csv", na.strings = c("", "NA"))
 Aug_22 <- read.csv("202208-divvy-tripdata.csv", na.strings = c("", "NA"))
 Sep_22 <- read.csv("202209-divvy-publictripdata.csv", na.strings = c("", "NA"))
 ```
+Move forward, all sheets were combined into one.
+
+```ruby
+#combining the sheets together
+Combined_trips <- bind_rows(
+  Oct_21,
+  Nov_21,
+  Dec_21,
+  Jan_22,
+  Feb_22,
+  Mar_22,
+  Apr_22,
+  May_22,
+  Jun_22,
+  Jul_22,
+  Aug_22,
+  Sep_22
+)
+```
+Dropping all uneccessary columns
+```ruby 
+#removing columns that are not necessary
+Combined_trips = select(-c(start_lat, start_lng, end_lat, end_lng)) 
+```
+
