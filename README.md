@@ -102,7 +102,7 @@ Combined_trips <- distinct(Combined_trips) %>%
 Note: Upon running the previous chunk of code, there were no duplicates to be found. 
 
 
-Lastly, the file was exported (in order to use in tableau)
+Lastly, the file was exported (in order to use in tableau).
 ```ruby
 write.csv(Combined_trips, "Filtered_Cyclistic_Data.csv")
 ```
