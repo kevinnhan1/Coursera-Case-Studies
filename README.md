@@ -1,4 +1,6 @@
 # Cyclistic : Google Data Analytics Case Study
+### Note:
+For learning purposes various tools were used to work on this case study.
 
 ## Scenario:
 You are a junior data analyst working in the marketing analyst team at Cyclistic, a bike-share company in Chicago. The director
@@ -17,9 +19,6 @@ Until now, Cyclistic’s marketing strategy relied on building general awareness
 One approach that helped make these things possible was the flexibility of its pricing plans: single-ride passes, full-day passes,
 and annual memberships. Customers who purchase single-ride or full-day passes are referred to as casual riders. Customers
 who purchase annual memberships are Cyclistic members.
-
-### Note:
-For learning purposes a variety of tools were used for this use case.
 
 # Ask:
 ## The business task:
