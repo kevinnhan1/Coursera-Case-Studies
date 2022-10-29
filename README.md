@@ -99,9 +99,28 @@ Duplicates or 'N/A' values were removed.
 Combined_trips <- distinct(Combined_trips) %>%
   na.omit(Combined_trips)
 ```
+Note: Upon running the previous chunk of code, there were no duplicates to be found. 
+
+
 Lastly, the file was exported (in order to use in tableau)
 ```ruby
 write.csv(Combined_trips, "Filtered_Cyclistic_Data.csv")
 ```
 
-As a result, before data cleaning there were *13 columns* and *5828235 rows*
+After cleaning and transforming the data, we were left with **9 columns** and **4474141 rows** of data. Prior before, there were **13 columns** and **5828235 rows** of data. Upon data cleaning and transformation a bit over **23%** of the data contained missing values ('N/A' values). Imputation, wasn't considered due to the nature of the data. Thus, we went with moving forward with the data as it was still a large sample of the entire populatio nof the data.
+
+# Analyze: 
+To start off, I did my calculations around **both** casual and annual members. I examined how popular bikes were being rented during the days of the week and during the months of a year.
+
+Moving forward, I looked at the differences between casual and annual members. In order to do so, I analyzed them in similar manner as previously by looking at how many bikes were rented during the different days of the week and months of the year.
+
+Lastly, I remained looking at the difference between casual and annual members. However, I looked at the ride length between two groups during the different days of the week and as well as the different months of the year. 
+
+## Sharing
+In order to create the visuals and analyze the data **Tableau** was the application of choice. To present and share the findings **Google Slides** was chosen to create the presentation and can be found [here]{https://docs.google.com/presentation/d/1KXbxHz3Smt7g5saKWOL1qVU89sl9Z9NeOfMvZysam04/edit?usp=sharing}. 
+
+## Act
+
+
+
+
