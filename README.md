@@ -18,6 +18,9 @@ One approach that helped make these things possible was the flexibility of its p
 and annual memberships. Customers who purchase single-ride or full-day passes are referred to as casual riders. Customers
 who purchase annual memberships are Cyclistic members.
 
+### Note:
+For learning purposes a variety of tools were used for this use case.
+
 # Ask:
 ## The business task:
 The business task in this case is to discover marketing strategies aimed at converting casual rides to annual riders. To achieve this, a few questions were asked:
@@ -25,7 +28,7 @@ The business task in this case is to discover marketing strategies aimed at conv
 2. Why would casual riders buy Cyclistic annual memberships?
 3. How can Cyclistic use digital media to influence casual riders to become members?
 
-## Stakeholders
+## Stakeholders:
 1. **Lily Moreno**: The director of marketing and your manager. Moreno is responsible for the development of campaigns
 and initiatives to promote the bike-share program. These may include email, social media, and other channels.
 2. **Cyclistic marketing analytics team:** A team of data analysts who are responsible for collecting, analyzing, and
@@ -35,11 +38,32 @@ achieve them.
 3. **Cyclistic executive team:** The notoriously detail-oriented executive team will decide whether to approve the
 recommended marketing program.
 
-# Prepare
+# Prepare:
 For this case study the 12 most recent months (as of Oct 2022) of Cyclistic's data was collected. The data was has been made available by Motivate International Inc and can be found [here](https://divvy-tripdata.s3.amazonaws.com/index.html), under this [license](https://ride.divvybikes.com/data-license-agreement). 
 
 The data files have been downloaded and stored locally and on Google Drive.
 
 All 12 spreadsheets are formatted to be CSV files (comma seperated values) and have a total of 13 identical columns. Column names are the following: ride_id, ridable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, member_casual.
 
+# Process:
+## Tools:
+RStudios was used for the data cleaning process of this case study. This is because, R is very strong and powerful when it comes to using a large amount of data.
 
+## Cleaning and transforming the data:
+The data was imported from it's local directory. Any blank values were converted to 'N/A'.
+
+```ruby
+#importing csv files and changing all blanks to NA values
+Oct_21 <- read.csv("202110-divvy-tripdata.csv", na.strings = c("", "NA"))
+Nov_21 <- read.csv("202111-divvy-tripdata.csv", na.strings = c("", "NA"))
+Dec_21 <- read.csv("202112-divvy-tripdata.csv", na.strings = c("", "NA"))
+Jan_22 <- read.csv("202201-divvy-tripdata.csv", na.strings = c("", "NA"))
+Feb_22 <- read.csv("202202-divvy-tripdata.csv", na.strings = c("", "NA"))
+Mar_22 <- read.csv("202203-divvy-tripdata.csv", na.strings = c("", "NA"))
+Apr_22 <- read.csv("202204-divvy-tripdata.csv", na.strings = c("", "NA"))
+May_22 <- read.csv("202205-divvy-tripdata.csv", na.strings = c("", "NA"))
+Jun_22 <- read.csv("202206-divvy-tripdata.csv", na.strings = c("", "NA"))
+Jul_22 <- read.csv("202207-divvy-tripdata.csv", na.strings = c("", "NA"))
+Aug_22 <- read.csv("202208-divvy-tripdata.csv", na.strings = c("", "NA"))
+Sep_22 <- read.csv("202209-divvy-publictripdata.csv", na.strings = c("", "NA"))
+```
