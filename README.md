@@ -86,9 +86,22 @@ Combined_trips <- bind_rows(
   Sep_22
 )
 ```
-Dropping all uneccessary columns
+In the next code chunk all uneccessary columns were dropped.
+
 ```ruby 
 #removing columns that are not necessary
 Combined_trips = select(-c(start_lat, start_lng, end_lat, end_lng)) 
 ```
+Duplicates or 'N/A' values were removed.
 
+```ruby
+#removing duplicates and NA values
+Combined_trips <- distinct(Combined_trips) %>%
+  na.omit(Combined_trips)
+```
+Lastly, the file was exported (in order to use in tableau)
+```ruby
+write.csv(Combined_trips, "Filtered_Cyclistic_Data.csv")
+```
+
+As a result, before data cleaning there were *13 columns* and *5828235 rows*
