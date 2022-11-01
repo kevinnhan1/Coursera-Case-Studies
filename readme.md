@@ -116,7 +116,7 @@ Moving forward, I looked at the differences between casual and annual members. I
 Lastly, I remained looking at the difference between casual and annual members. However, I looked at the ride length between two groups during the different days of the week and as well as the different months of the year. 
 
 # Sharing/Act
-In order to create the visuals and analyze the data **Tableau** was the application of choice. To present and share the findings **Google Slides** was chosen to create the presentation and can be found [here](https://docs.google.com/presentation/d/1KXbxHz3Smt7g5saKWOL1qVU89sl9Z9NeOfMvZysam04/edit?usp=sharing). 
+In order to create the visuals and analyze the data **Tableau** was the application of choice. To present and share findings/insights **Google Slides** was chosen  and can be found [here](https://docs.google.com/presentation/d/1KXbxHz3Smt7g5saKWOL1qVU89sl9Z9NeOfMvZysam04/edit?usp=sharing). Please follow the link to continue on with the case study.
 
 
 
